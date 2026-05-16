@@ -25,19 +25,19 @@ cleatBtn.addEventListener("click", function() {
 function getVolume(vol) {
    const litre = vol *  3.78
    const gallon = vol *  0.26
-   return [litre.toFixed(2), gallon.toFixed(2), vol]
+   return [litre.toFixed(3), gallon.toFixed(3), vol]
 }
 
 function getMass(val) {
     const kilo = val / 2.20462
     const pound = val * 2.20
-    return [kilo.toFixed(2), pound.toFixed(2), val]
+    return [kilo.toFixed(3), pound.toFixed(3), val]
 }
 
 function getLength(val) {
     const meter = val / 3.28084
     const feet = val * 3.28
-    return [meter.toFixed(2), feet.toFixed(2), val]
+    return [meter.toFixed(3), feet.toFixed(3), val]
 }
 
 function render(arr, unit1, unit2 , type, field) {
